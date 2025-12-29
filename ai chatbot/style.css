@@ -1,0 +1,130 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Chatbot frame */
+.chatbot-frame {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    max-width: 400px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo i {
+    font-size: 20px;
+}
+
+/* Chat body */
+.chatbot-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #fff;
+}
+
+/* Bot chat bubble */
+.bot-chat {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.bot-logo {
+    margin-right: 10px;
+    color: #4a90e2;
+    font-size: 22px;
+}
+
+.chat-text {
+    background: #e6e6e6;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+/* User chat bubble */
+.user-chat {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.user-chat .chat-text {
+    background: #4a90e2;
+    color: #fff;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+/* Footer */
+.chat-footer {
+    padding: 10px;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+.chat-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    resize: none;
+    background: #fff;
+    outline: none;
+}
+
+.chat-controls button {
+    background: #4a90e2;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.chat-controls button:hover {
+    background: #357ab8;
+}
+
+/* Scrollbar styling */
+.chatbot-body::-webkit-scrollbar {
+    width: 6px;
+}
+.chatbot-body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
